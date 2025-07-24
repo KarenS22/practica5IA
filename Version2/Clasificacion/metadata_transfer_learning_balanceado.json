@@ -1,0 +1,38 @@
+{
+  "model_type": "MobileNetV2_Transfer_Learning",
+  "image_size": [
+    224,
+    224
+  ],
+  "num_classes": 11,
+  "classes": [
+    "Banana",
+    "Orange",
+    "Red-Bell-Pepper",
+    "aluminium-form",
+    "bread",
+    "cocaCola",
+    "doritos",
+    "red-bull",
+    "shampoo-H&S",
+    "tea",
+    "yogurt-toni-mix"
+  ],
+  "dataset_balanced": true,
+  "train_samples": 888,
+  "val_samples": 60,
+  "final_metrics": {
+    "train_accuracy": 0.9650900959968567,
+    "val_accuracy": 0.9833333492279053,
+    "train_loss": 0.004051260184496641,
+    "val_loss": 0.0018577061127871275,
+    "hamming_loss": 0.0,
+    "subset_accuracy": 1.0
+  },
+  "architecture": {
+    "base_model": "MobileNetV2",
+    "pretrained": "imagenet",
+    "trainable_base": false,
+    "total_params": 2423371
+  }
+}

@@ -1,0 +1,12 @@
+# Configuración del dataset para YOLOv8 Segmentación
+path: Dataset
+train: images/train
+val: images/val
+
+names:
+  0: cocaCola
+  1: red_bull
+  2: doritos
+  3: banana
+  4: shampoo_H&S
+  5: toniMix
