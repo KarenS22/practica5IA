@@ -12,17 +12,17 @@ augmentador = ImageDataGenerator(
     fill_mode='nearest'
 )
 
-input_dir = 'Dataset-SupermarketImages/Productos/Train'
-output_dir = 'Dataset-SupermarketImages/Productos/Train_Aumentado'
+input_dir = '../Dataset-SupermarketImages/Productos/Validation'
+output_dir = '../Dataset-SupermarketImages/Productos/Validation_Aumentado'
 
 os.makedirs(output_dir, exist_ok=True)
 
 # Solo las clases deseadas
-clases_a_duplicar = ['doritos', 'cocaCola']
+# clases_a_duplicar = ['doritos', 'cocaCola']
 
 for clase in tqdm(os.listdir(input_dir)):
-    if clase not in clases_a_duplicar:
-        continue  # saltar otras clases
+    # if clase not in clases_a_duplicar:
+    #     continue  # saltar otras clases
 
     clase_dir = os.path.join(input_dir, clase)
     output_clase_dir = os.path.join(output_dir, clase)
@@ -40,5 +40,5 @@ for clase in tqdm(os.listdir(input_dir)):
             save_path = os.path.join(output_clase_dir, f"aug_{i}_{img_file}")
             save_img(save_path, batch[0])
             i += 1
-            if i >= 6:
+            if i >= 4:
                 break
