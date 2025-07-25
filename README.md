@@ -2,7 +2,8 @@
 
 ## Descripción
 
-Este proyecto implementa un modelo de clasificación multietiqueta para identificar productos de supermercado utilizando Transfer Learning con MobileNetV2. El modelo está diseñado para clasificar 11 categorías diferentes de productos con un dataset balanceado.
+Este proyecto implementa un modelo de clasificación multietiqueta para identificar productos de supermercado,
+ el cual cuenta con dos versiones, el primero usando una CNN pura y el segundo utilizando Transfer Learning con MobileNetV2. El modelo está diseñado para clasificar 11 categorías diferentes de productos con un dataset balanceado.
 
 ## Estructura del Proyecto
 
@@ -11,7 +12,6 @@ Version2/Clasificacion/
 ├── modeloCNNTL.ipynb                                    # Notebook principal
 ├── modelo_cnn_transfer_learning_balanceado.h5          # Modelo entrenado
 ├── metadata_transfer_learning_balanceado.json          # Metadatos del modelo
-└── README.md                                           # Este archivo
 ```
 
 ## Dataset
@@ -150,27 +150,6 @@ El análisis automático incluye:
 - Rendimiento "perfecto" que podría indicar dataset demasiado simple
 - Necesidad de validación con imágenes completamente nuevas
 
-## Mejoras Futuras
-
-1. Ampliar el conjunto de validación
-2. Incluir más variabilidad en las imágenes
-3. Implementar data augmentation
-4. Probar con otros modelos pre-entrenados
-5. Optimización de thresholds por clase
-
-## Autor
-
-Desarrollado como parte del proyecto de Inteligencia Artificial.
-
-## Tecnologías Utilizadas
-
-- TensorFlow/Keras
-- OpenCV
-- Scikit-learn
-- Matplotlib
-- Pandas
-- NumPy
-- MobileNetV2
 
 ## Notas Técnicas
 
